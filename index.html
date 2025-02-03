@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stacalist</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <center><h1>stacalist python librarie</h1></center>
+    <a id='l1' href="stacalist.py" download>download</a>
+    <p>this librarie is made by issa ghnaim it has simple functions that will do a lot of useful things that take a lot of time. It’s just for python. <b>You don’t need to import some Python modules like math and random because they are added to the library.</b></p>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 50px;
+        }
+        body {
+            background-color: aqua;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 89, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+    </style>
+    <script>
+        $(function() {
+            $('#l1').on('click', function() {
+                // Fade out the body (making it disappear)
+                $('body').fadeOut(1000, function() {
+                    // After fading out, change the background color and fade it back in
+                    $('body').css('background-color', 'lightgreen').fadeIn(1000);
+                    $('h1').text('thanks for downloading')
+                    $('a').fadeOut(1000)
+                    $('p').fadeOut(1000)
+                });
+            });
+        });
+    </script>
+</body>
+</html>
