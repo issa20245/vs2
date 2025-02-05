@@ -19,3 +19,5 @@ def rand(a,b):
 def grf(h,w):
     for i in range(h):
         print(w)
+def ask(val):
+    return input(val)
